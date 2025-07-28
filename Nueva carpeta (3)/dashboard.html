@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - TCL Cooperativa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    
+    <nav class="dashboard-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="logo-tcl.png" alt="TCL Logo" class="logo">
+                <h1 class="brand-text">TCL Cooperativa</h1>
+                <span class="nav-subtitle">Panel de Usuario</span>
+            </div>
+            <div class="nav-user">
+                <span>Bienvenido, <strong id="userName">Juan Pérez</strong></span>
+                <button class="btn btn-outline btn-small" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Cerrar Sesión
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="container">
+            
+            <div class="dashboard-header">
+                <h1>Panel de Control</h1>
+                <p>Gestiona tu participación en el proyecto</p>
+            </div>
+
+            
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="status-content">
+                        <h3>Estado</h3>
+                        <span class="badge badge-success">Aprobado</span>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="status-content">
+                        <h3>Unidad</h3>
+                        <span class="status-value">A-101</span>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="status-content">
+                        <h3>Horas Semanales</h3>
+                        <span class="status-value">18/21</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85.7%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="status-content">
+                        <h3>Pagos</h3>
+                        <span class="badge badge-success">Al día</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-button active" onclick="showTab('hours')">Registro de Horas</button>
+                    <button class="tab-button" onclick="showTab('payments')">Pagos</button>
+                    <button class="tab-button" onclick="showTab('profile')">Perfil</button>
+                </div>
+
+                
+                <div id="hoursTab" class="tab-content active">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Registro Semanal de Horas</h2>
+                            <p>Registra las horas trabajadas esta semana (mínimo 21 horas)</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="hours-grid">
+                                <div class="day-card">
+                                    <div class="day-name">Lun</div>
+                                    <div class="day-hours">3h</div>
+                                </div>
+                                <div class="day-card">
+                                    <div class="day-name">Mar</div>
+                                    <div class="day-hours">4h</div>
+                                </div>
+                                <div class="day-card">
+                                    <div class="day-name">Mié</div>
+                                    <div class="day-hours">2h</div>
+                                </div>
+                                <div class="day-card">
+                                    <div class="day-name">Jue</div>
+                                    <div class="day-hours">3h</div>
+                                </div>
+                                <div class="day-card">
+                                    <div class="day-name">Vie</div>
+                                    <div class="day-hours">4h</div>
+                                </div>
+                                <div class="day-card">
+                                    <div class="day-name">Sáb</div>
+                                    <div class="day-hours">2h</div>
+                                </div>
+                                <div class="day-card">
+                                    <div class="day-name">Dom</div>
+                                    <div class="day-hours">0h</div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Te faltan 3 horas para completar el mínimo semanal</span>
+                            </div>
+
+                            <button class="btn btn-primary btn-full">
+                                <i class="fas fa-clock"></i>
+                                Registrar Horas de Hoy
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Justificación de Inasistencias</h2>
+                            <p>Si no puedes cumplir las 21 horas, justifica tu inasistencia</p>
+                        </div>
+                        <div class="card-content">
+                            <button class="btn btn-outline btn-full">
+                                <i class="fas fa-file-alt"></i>
+                                Solicitar Exoneración
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="paymentsTab" class="tab-content">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Estado de Pagos</h2>
+                            <p>Revisa el estado de tus pagos mensuales</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="payments-list">
+                                <div class="payment-item">
+                                    <div class="payment-info">
+                                        <h4>Enero 2024</h4>
+                                        <p>Cuota mensual</p>
+                                    </div>
+                                    <span class="badge badge-success">
+                                        <i class="fas fa-check-circle"></i>
+                                        Pagado
+                                    </span>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-info">
+                                        <h4>Febrero 2024</h4>
+                                        <p>Cuota mensual</p>
+                                    </div>
+                                    <span class="badge badge-danger">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        Pendiente
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-full">
+                                <i class="fas fa-upload"></i>
+                                Subir Comprobante de Pago
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Aporte Inicial</h2>
+                            <p>Estado del comprobante de aporte inicial</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="payment-item approved">
+                                <div class="payment-info">
+                                    <h4>Aporte Inicial</h4>
+                                    <p>Comprobante validado</p>
+                                </div>
+                                <span class="badge badge-success">
+                                    <i class="fas fa-check-circle"></i>
+                                    Aprobado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="profileTab" class="tab-content">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h2>Información Personal</h2>
+                            <p>Actualiza tu información personal</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="profile-info">
+                                <div class="info-row">
+                                    <label>Nombre</label>
+                                    <span>Juan Pérez</span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Email</label>
+                                    <span>juan.perez@email.com</span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Teléfono</label>
+                                    <span>+54 11 1234-5678</span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Dirección</label>
+                                    <span>Av. Corrientes 1234, CABA</span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-outline">
+                                <i class="fas fa-edit"></i>
+                                Editar Perfil
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

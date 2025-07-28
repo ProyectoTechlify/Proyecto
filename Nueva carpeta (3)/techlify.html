@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techlify - Soluciones Tecnológicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="logo-techlify.png" alt="Techlify Logo" class="logo">
+                <button
+            id="hamburger"
+            aria-label="Abrir menú"
+            style="background: none; border: none; cursor: pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="black"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+                <h1 class="brand-text">Techlify</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="techlify.html" class="nav-link active">Techlify</a>
+                <a href="cooperativa.html" class="nav-link">Cooperativa</a>
+                <a href="about.html" class="nav-link">Sobre Nosotros</a>
+                <a href="login.html" class="nav-link">Iniciar Sesión</a>
+                <a href="register.html" class="btn btn-primary">Registrarse</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Soluciones tecnológicas
+                        <span class="gradient-text">innovadoras</span>
+                    </h1>
+                    <p class="hero-description">
+                        En Techlify transformamos ideas en realidad digital. Desarrollamos software personalizado, 
+                        aplicaciones web y soluciones tecnológicas que impulsan el crecimiento de tu negocio.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#servicios" class="btn btn-primary btn-large">
+                            Ver Servicios
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn-outline btn-large">
+                            Contactanos
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Equipo de desarrollo trabajando" class="hero-img">
+                    <div class="floating-element floating-1"></div>
+                    <div class="floating-element floating-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos soluciones tecnológicas completas para tu empresa</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web modernos, responsivos y optimizados para SEO que convierten visitantes en clientes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Aplicaciones Móviles</h3>
+                    <p>Desarrollamos apps nativas e híbridas para iOS y Android con la mejor experiencia de usuario.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Sistemas de Gestión</h3>
+                    <p>Software personalizado para automatizar procesos y mejorar la eficiencia de tu negocio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Soluciones Cloud</h3>
+                    <p>Migración y desarrollo de aplicaciones en la nube para mayor escalabilidad y seguridad.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & BI</h3>
+                    <p>Herramientas de análisis de datos para tomar decisiones informadas basadas en información real.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protegemos tu información y sistemas con las mejores prácticas de seguridad digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Proceso de Trabajo</h2>
+            </div>
+            <div class="process-content">
+                <div class="process-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Proceso de desarrollo de software">
+                </div>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Análisis y Planificación</h3>
+                            <p>Entendemos tus necesidades y definimos la estrategia tecnológica más adecuada.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Diseño y Prototipado</h3>
+                            <p>Creamos wireframes y prototipos para validar la experiencia de usuario.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Desarrollo</h3>
+                            <p>Programamos tu solución usando las mejores tecnologías y prácticas del mercado.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Testing y Lanzamiento</h3>
+                            <p>Probamos exhaustivamente y lanzamos tu proyecto con soporte continuo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnologías que Dominamos</h2>
+                <p>Trabajamos con las herramientas más modernas del mercado</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">React</span>
+                        <span class="tech-item">Vue.js</span>
+                        <span class="tech-item">Angular</span>
+                        <span class="tech-item">Next.js</span>
+                        <span class="tech-item">TypeScript</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">.NET</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">PostgreSQL</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">Redis</span>
+                        <span class="tech-item">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Conversemos sobre cómo podemos ayudarte a llevarlo al siguiente nivel</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contacto@techlify.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+54 11 1234-5678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Buenos Aires, Argentina</span>
+                    </div>
+                </div>
+                <a href="mailto:contacto@techlify.com" class="btn btn-secondary btn-large">
+                    Solicitar Cotización
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo-techlify.png" alt="Techlify Logo" class="footer-logo">
+                    <h3>Techlify</h3>
+                </div>
+                <p>Transformando ideas en soluciones digitales</p>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="techlify.html">Techlify</a>
+                    <a href="tcl-vivi.html">TCL VIVI</a>
+                    <a href="cooperativa.html">Cooperativa</a>
+                    <a href="about.html">Sobre Nosotros</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
