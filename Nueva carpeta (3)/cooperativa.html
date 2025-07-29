@@ -8,32 +8,25 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navegación principal -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
                 <img src="logo-raices-unidas.png" alt="Raíces Unidas Logo" class="logo">
+                <!-- Botón menú hamburguesa para abrir/cerrar menú en móvil -->
                 <button
-            id="hamburger"
-            aria-label="Abrir menú"
-            style="background: none; border: none; cursor: pointer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="black"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-              />
-            </svg>
-          </button>
+                    id="hamburger"
+                    aria-label="Abrir menú"
+                    style="background: none; border: none; cursor: pointer"
+                >
+                    <!-- Icono SVG con tres líneas -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
                 <h1 class="brand-text">Raíces Unidas</h1>
             </div>
+            <!-- Menú principal con enlaces -->
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Inicio</a>
                 <a href="techlify.html" class="nav-link">Techlify</a>
@@ -50,7 +43,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Sección principal tipo "hero" con texto e imagen -->
     <section class="hero">
         <div class="hero-background"></div>
         <div class="container">
@@ -77,6 +70,7 @@
                 <div class="hero-image">
                     <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
                          alt="Familias de la cooperativa trabajando juntas" class="hero-img">
+                    <!-- Elementos decorativos flotantes -->
                     <div class="floating-element floating-1"></div>
                     <div class="floating-element floating-2"></div>
                 </div>
@@ -84,7 +78,7 @@
         </div>
     </section>
 
-    <!-- Values Section -->
+    <!-- Sección con los valores que definen la cooperativa -->
     <section class="features">
         <div class="container">
             <div class="section-header">
@@ -92,6 +86,7 @@
                 <p>Los principios que nos guían en cada paso del camino</p>
             </div>
             <div class="features-grid">
+                <!-- Cada tarjeta representa un valor importante -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-handshake"></i>
@@ -138,7 +133,7 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Sección que muestra los proyectos actuales con su progreso -->
     <section id="proyectos" class="process">
         <div class="container">
             <div class="section-header">
@@ -146,6 +141,7 @@
                 <p>Conoce los desarrollos habitacionales que estamos construyendo</p>
             </div>
             <div class="projects-grid">
+                <!-- Tarjeta proyecto Villa Esperanza -->
                 <div class="project-card">
                     <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
                          alt="Proyecto Villa Esperanza">
@@ -162,6 +158,7 @@
                         <span class="project-status status-construction">En Construcción</span>
                     </div>
                 </div>
+                <!-- Tarjeta proyecto Nuevo Amanecer -->
                 <div class="project-card">
                     <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
                          alt="Proyecto Nuevo Amanecer">
@@ -178,6 +175,7 @@
                         <span class="project-status status-completed">Completado</span>
                     </div>
                 </div>
+                <!-- Tarjeta proyecto Futuro Verde -->
                 <div class="project-card">
                     <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
                          alt="Proyecto Futuro Verde">
@@ -198,7 +196,7 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Sección con testimonios de cooperativistas -->
     <section class="community">
         <div class="container">
             <div class="section-header">
@@ -206,6 +204,7 @@
                 <p>Escucha las experiencias de quienes ya viven el sueño cooperativo</p>
             </div>
             <div class="testimonials-grid">
+                <!-- Testimonio Carlos Mendoza -->
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p>"Gracias a Raíces Unidas pudimos tener nuestra casa propia. El trabajo en equipo y la solidaridad hicieron posible lo que parecía imposible."</p>
@@ -219,6 +218,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Testimonio María González -->
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p>"No solo conseguimos una vivienda, sino que formamos una verdadera comunidad. Nuestros hijos crecen juntos y nosotros nos apoyamos siempre."</p>
@@ -232,6 +232,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Testimonio Roberto Silva -->
                 <div class="testimonial-card">
                     <div class="testimonial-content">
                         <p>"El proceso fue transparente desde el primer día. Sabíamos exactamente en qué se invertía cada peso y cómo avanzaba la construcción."</p>
@@ -249,7 +250,7 @@
         </div>
     </section>
 
-    <!-- Join Section -->
+    <!-- Sección de llamada a la acción para unirse -->
     <section class="cta">
         <div class="container">
             <div class="cta-content">
@@ -276,7 +277,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Pie de página con enlaces y logo -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
