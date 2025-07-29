@@ -9,13 +9,16 @@
 </head>
 <body class="dashboard-page">
     
+    <!-- Barra de navegación superior del panel -->
     <nav class="dashboard-nav">
         <div class="nav-container">
+            <!-- Logo y nombre de la cooperativa -->
             <div class="nav-brand">
                 <img src="logo-tcl.png" alt="TCL Logo" class="logo">
                 <h1 class="brand-text">TCL Cooperativa</h1>
                 <span class="nav-subtitle">Panel de Usuario</span>
             </div>
+            <!-- Información del usuario y botón para cerrar sesión -->
             <div class="nav-user">
                 <span>Bienvenido, <strong id="userName">Juan Pérez</strong></span>
                 <button class="btn btn-outline btn-small" onclick="logout()">
@@ -26,16 +29,19 @@
         </div>
     </nav>
 
+    <!-- Contenedor principal del contenido del panel -->
     <div class="dashboard-container">
         <div class="container">
             
+            <!-- Encabezado del panel -->
             <div class="dashboard-header">
                 <h1>Panel de Control</h1>
                 <p>Gestiona tu participación en el proyecto</p>
             </div>
 
-            
+            <!-- Sección que muestra el estado del usuario en diferentes aspectos -->
             <div class="status-grid">
+                <!-- Estado de aprobación del usuario -->
                 <div class="status-card">
                     <div class="status-icon">
                         <i class="fas fa-user-check"></i>
@@ -45,6 +51,7 @@
                         <span class="badge badge-success">Aprobado</span>
                     </div>
                 </div>
+                <!-- Unidad asignada al usuario -->
                 <div class="status-card">
                     <div class="status-icon">
                         <i class="fas fa-home"></i>
@@ -54,6 +61,7 @@
                         <span class="status-value">A-101</span>
                     </div>
                 </div>
+                <!-- Horas semanales trabajadas y barra de progreso -->
                 <div class="status-card">
                     <div class="status-icon">
                         <i class="fas fa-clock"></i>
@@ -62,10 +70,11 @@
                         <h3>Horas Semanales</h3>
                         <span class="status-value">18/21</span>
                         <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85.7%"></div>
+                            <div class="progress-fill" style="width: 85.7%"></div> <!-- Relleno según horas cumplidas -->
                         </div>
                     </div>
                 </div>
+                <!-- Estado de pagos del usuario -->
                 <div class="status-card">
                     <div class="status-icon">
                         <i class="fas fa-dollar-sign"></i>
@@ -77,15 +86,16 @@
                 </div>
             </div>
 
-            
+            <!-- Sección de pestañas para navegar entre registros, pagos y perfil -->
             <div class="tabs-container">
                 <div class="tabs-nav">
+                    <!-- Botones para cambiar entre pestañas -->
                     <button class="tab-button active" onclick="showTab('hours')">Registro de Horas</button>
                     <button class="tab-button" onclick="showTab('payments')">Pagos</button>
                     <button class="tab-button" onclick="showTab('profile')">Perfil</button>
                 </div>
 
-                
+                <!-- Pestaña Registro de Horas -->
                 <div id="hoursTab" class="tab-content active">
                     <div class="content-card">
                         <div class="card-header">
@@ -93,6 +103,7 @@
                             <p>Registra las horas trabajadas esta semana (mínimo 21 horas)</p>
                         </div>
                         <div class="card-content">
+                            <!-- Muestra las horas trabajadas por día -->
                             <div class="hours-grid">
                                 <div class="day-card">
                                     <div class="day-name">Lun</div>
@@ -124,11 +135,13 @@
                                 </div>
                             </div>
 
+                            <!-- Mensaje de advertencia si faltan horas para completar el mínimo -->
                             <div class="alert alert-warning">
                                 <i class="fas fa-exclamation-triangle"></i>
                                 <span>Te faltan 3 horas para completar el mínimo semanal</span>
                             </div>
 
+                            <!-- Botón para registrar las horas del día actual -->
                             <button class="btn btn-primary btn-full">
                                 <i class="fas fa-clock"></i>
                                 Registrar Horas de Hoy
@@ -136,6 +149,7 @@
                         </div>
                     </div>
 
+                    <!-- Sección para justificar inasistencias si no se alcanza el mínimo de horas -->
                     <div class="content-card">
                         <div class="card-header">
                             <h2>Justificación de Inasistencias</h2>
@@ -150,7 +164,7 @@
                     </div>
                 </div>
 
-                
+                <!-- Pestaña Pagos -->
                 <div id="paymentsTab" class="tab-content">
                     <div class="content-card">
                         <div class="card-header">
@@ -158,6 +172,7 @@
                             <p>Revisa el estado de tus pagos mensuales</p>
                         </div>
                         <div class="card-content">
+                            <!-- Lista de pagos con su estado -->
                             <div class="payments-list">
                                 <div class="payment-item">
                                     <div class="payment-info">
@@ -181,6 +196,7 @@
                                 </div>
                             </div>
 
+                            <!-- Botón para subir comprobante de pago -->
                             <button class="btn btn-primary btn-full">
                                 <i class="fas fa-upload"></i>
                                 Subir Comprobante de Pago
@@ -188,6 +204,7 @@
                         </div>
                     </div>
 
+                    <!-- Información del aporte inicial -->
                     <div class="content-card">
                         <div class="card-header">
                             <h2>Aporte Inicial</h2>
@@ -208,7 +225,7 @@
                     </div>
                 </div>
 
-                
+                <!-- Pestaña Perfil -->
                 <div id="profileTab" class="tab-content">
                     <div class="content-card">
                         <div class="card-header">
@@ -216,6 +233,7 @@
                             <p>Actualiza tu información personal</p>
                         </div>
                         <div class="card-content">
+                            <!-- Datos personales del usuario -->
                             <div class="profile-info">
                                 <div class="info-row">
                                     <label>Nombre</label>
@@ -235,6 +253,7 @@
                                 </div>
                             </div>
 
+                            <!-- Botón para editar perfil -->
                             <button class="btn btn-outline">
                                 <i class="fas fa-edit"></i>
                                 Editar Perfil
@@ -246,6 +265,7 @@
         </div>
     </div>
 
+    <!-- Archivo externo de JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
