@@ -8,46 +8,39 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navegación principal -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
                 <img src="logo-tcl.png" alt="TCL Logo" class="logo">
+                <!-- Botón menú hamburguesa para móviles -->
                 <button
-            id="hamburger"
-            aria-label="Abrir menú"
-            style="background: none; border: none; cursor: pointer"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="black"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-              />
-            </svg>
-          </button>
+                    id="hamburger"
+                    aria-label="Abrir menú"
+                    style="background: none; border: none; cursor: pointer"
+                >
+                    <!-- Icono SVG de tres líneas para abrir/cerrar menú -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
                 <h1 class="brand-text">TCL Cooperativa</h1>
             </div>
+            <!-- Enlaces del menú de navegación -->
             <div class="nav-menu">
                 <a href="index.html" class="nav-link active">Inicio</a>
-          <a href="techlify.html" class="nav-link">Techlify</a>
-          <a href="cooperativa.html" class="nav-link">Cooperativa</a>
-          <a href="about.html" class="nav-link">Sobre Nosotros</a>
-          <a href="login.html" class="nav-link">Iniciar Sesión</a>
-          <a href="register.html" class="btn btn-primary">Registrarse</a>
+                <a href="techlify.html" class="nav-link">Techlify</a>
+                <a href="cooperativa.html" class="nav-link">Cooperativa</a>
+                <a href="about.html" class="nav-link">Sobre Nosotros</a>
+                <a href="login.html" class="nav-link">Iniciar Sesión</a>
+                <a href="register.html" class="btn btn-primary">Registrarse</a>
             </div>
         </div>
     </nav>
 
     <div class="about-page">
         <div class="container">
-            <!-- Header -->
+            <!-- Encabezado con título y link para volver a inicio -->
             <div class="page-header">
                 <a href="index.html" class="back-link">
                     <i class="fas fa-arrow-left"></i>
@@ -57,18 +50,18 @@
                 <p>Conoce más sobre TCL Cooperativa y nuestra misión de construir comunidades</p>
             </div>
 
-            <!-- Mission -->
+            <!-- Sección que muestra la misión principal -->
             <div class="content-card">
                 <div class="card-header">
                     <i class="fas fa-bullseye"></i>
                     <h2>Nuestra Misión</h2>
                 </div>
                 <div class="card-content">
-                    <p>En TCL Cooperativa, nos dedicamos a hacer realidad el sueño de la vivienda propia a través del trabajo colaborativo y la solidaridad. Creemos que toda familia merece un hogar digno y que juntos podemos construir comunidades más fuertes y sostenibles.</p>
+                    <p>En TCL Cooperativa, nos dedicamos a hacer realidad el sueño de la vivienda propia a través del trabajo colaborativo y la solidaridad.</p>
                 </div>
             </div>
 
-            <!-- What We Do -->
+            <!-- Sección con los servicios o actividades principales -->
             <div class="content-card">
                 <div class="card-header">
                     <i class="fas fa-tools"></i>
@@ -76,32 +69,29 @@
                 </div>
                 <div class="card-content">
                     <div class="services-grid">
+                        <!-- Servicio: Construcción cooperativa -->
                         <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-hammer"></i>
-                            </div>
+                            <div class="service-icon"><i class="fas fa-hammer"></i></div>
                             <h3>Construcción Cooperativa</h3>
                             <p>Construimos viviendas con el trabajo conjunto de todos los miembros, reduciendo costos y fortaleciendo lazos.</p>
                         </div>
+                        <!-- Servicio: Gestión participativa -->
                         <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
+                            <div class="service-icon"><i class="fas fa-users"></i></div>
                             <h3>Gestión Participativa</h3>
-                            <p>Todos los miembros participan en las decisiones importantes del proyecto a través de asambleas democráticas.</p>
+                            <p>Todos los miembros participan en decisiones importantes a través de asambleas democráticas.</p>
                         </div>
+                        <!-- Servicio: Apoyo mutuo -->
                         <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-handshake"></i>
-                            </div>
+                            <div class="service-icon"><i class="fas fa-handshake"></i></div>
                             <h3>Apoyo Mutuo</h3>
-                            <p>Creamos una red de apoyo donde cada familia contribuye y recibe ayuda de la comunidad.</p>
+                            <p>Creamos una red de ayuda donde cada familia contribuye y recibe soporte de la comunidad.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Values -->
+            <!-- Valores que guían a la cooperativa -->
             <div class="content-card">
                 <div class="card-header">
                     <i class="fas fa-heart"></i>
@@ -111,25 +101,25 @@
                     <div class="values-grid">
                         <div class="value-item">
                             <h3>Solidaridad</h3>
-                            <p>Trabajamos juntos para el beneficio común, apoyándonos mutuamente en cada etapa del proceso.</p>
+                            <p>Apoyo mutuo para beneficio común en todas las etapas.</p>
                         </div>
                         <div class="value-item">
                             <h3>Transparencia</h3>
-                            <p>Mantenemos comunicación abierta sobre todos los aspectos del proyecto, desde costos hasta decisiones.</p>
+                            <p>Comunicación abierta sobre costos y decisiones.</p>
                         </div>
                         <div class="value-item">
                             <h3>Compromiso</h3>
-                            <p>Cada miembro se compromete con el trabajo y la participación activa en la construcción de la comunidad.</p>
+                            <p>Participación activa de cada miembro en el proyecto.</p>
                         </div>
                         <div class="value-item">
                             <h3>Sustentabilidad</h3>
-                            <p>Construimos pensando en el futuro, con materiales y técnicas que respetan el medio ambiente.</p>
+                            <p>Uso de materiales y técnicas respetuosas con el medio ambiente.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- How It Works -->
+            <!-- Explicación paso a paso del proceso de la cooperativa -->
             <div class="content-card">
                 <div class="card-header">
                     <i class="fas fa-cogs"></i>
@@ -137,6 +127,7 @@
                 </div>
                 <div class="card-content">
                     <div class="process-timeline">
+                        <!-- Paso 1: Registro e ingreso -->
                         <div class="timeline-item">
                             <div class="timeline-number">1</div>
                             <div class="timeline-content">
@@ -144,6 +135,7 @@
                                 <p>Los interesados se registran y son evaluados por el consejo administrativo.</p>
                             </div>
                         </div>
+                        <!-- Paso 2: Aporte inicial para la unidad -->
                         <div class="timeline-item">
                             <div class="timeline-number">2</div>
                             <div class="timeline-content">
@@ -151,25 +143,27 @@
                                 <p>Una vez aprobados, realizan el aporte inicial y reciben su unidad asignada.</p>
                             </div>
                         </div>
+                        <!-- Paso 3: Trabajo cooperativo semanal -->
                         <div class="timeline-item">
                             <div class="timeline-number">3</div>
                             <div class="timeline-content">
                                 <h3>Trabajo Cooperativo</h3>
-                                <p>Cada familia contribuye con 21 horas semanales de trabajo en la construcción.</p>
+                                <p>Cada familia aporta 21 horas semanales en la construcción.</p>
                             </div>
                         </div>
+                        <!-- Paso 4: Entrega de las viviendas -->
                         <div class="timeline-item">
                             <div class="timeline-number">4</div>
                             <div class="timeline-content">
                                 <h3>Entrega de Vivienda</h3>
-                                <p>Al completar la construcción, cada familia recibe las llaves de su hogar.</p>
+                                <p>Al finalizar, cada familia recibe las llaves de su nuevo hogar.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Why Choose Us -->
+            <!-- Beneficios de formar parte de TCL -->
             <div class="content-card">
                 <div class="card-header">
                     <i class="fas fa-star"></i>
@@ -181,35 +175,35 @@
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Ahorro Significativo</h4>
-                                <p>El trabajo cooperativo reduce considerablemente el costo final de la vivienda.</p>
+                                <p>Trabajo en conjunto que reduce el costo final de la vivienda.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Comunidad Unida</h4>
-                                <p>Construyes lazos duraderos con tus futuros vecinos desde el primer día.</p>
+                                <p>Formación de lazos fuertes con futuros vecinos.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Calidad Garantizada</h4>
-                                <p>Al participar en la construcción, tienes control directo sobre la calidad de tu hogar.</p>
+                                <p>Control directo sobre la calidad durante la construcción.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Apoyo Continuo</h4>
-                                <p>La cooperativa brinda soporte y asesoramiento durante todo el proceso.</p>
+                                <p>Asesoramiento y soporte durante todo el proceso.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CTA -->
+            <!-- Invitación para registrarse o iniciar sesión -->
             <div class="cta-card">
                 <h2>¿Listo para Comenzar tu Sueño?</h2>
                 <p>Únete a las familias que ya están construyendo su futuro con TCL Cooperativa</p>
@@ -221,7 +215,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Pie de página con enlaces y logo -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
