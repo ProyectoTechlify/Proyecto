@@ -22,12 +22,12 @@
             <p>Accede a tu cuenta de cooperativista</p>
         </div>
 
-       
         <div class="form-card">
             <div class="card-header">
                 <h2>Iniciar Sesión</h2>
                 <p>Ingresa tus credenciales para acceder al sistema</p>
             </div>
+            <!-- Formulario para iniciar sesión -->
             <form id="loginForm" class="login-form">
                 <div class="form-group">
                     <label for="loginEmail">Correo Electrónico</label>
@@ -38,6 +38,7 @@
                     <label for="loginPassword">Contraseña</label>
                     <div class="password-input">
                         <input type="password" id="loginPassword" name="password" placeholder="Tu contraseña" required>
+                        <!-- Botón para mostrar/ocultar contraseña -->
                         <button type="button" class="password-toggle" onclick="togglePassword('loginPassword')">
                             <i class="fas fa-eye"></i>
                         </button>
@@ -49,7 +50,9 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-large btn-full">
+                    <!-- Texto normal del botón -->
                     <span class="btn-text">Iniciar Sesión</span>
+                    <!-- Indicador de carga que se muestra al enviar el formulario -->
                     <span class="btn-loading" style="display: none;">
                         <i class="fas fa-spinner fa-spin"></i>
                         Iniciando sesión...
@@ -61,7 +64,7 @@
                 <p>¿No tienes una cuenta? <a href="register.html">Registrarse</a></p>
             </div>
 
-           
+            <!-- Mensaje informativo sobre estado de cuenta -->
             <div class="info-box">
                 <i class="fas fa-info-circle"></i>
                 <div>
@@ -71,6 +74,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Archivo JS con funciones como togglePassword y manejo del form -->
 </body>
 </html>
