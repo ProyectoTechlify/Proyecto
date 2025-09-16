@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de Usuario</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="inner">
+      <a class="logo" href="./usuario.html">
+        <img src="./assets/logo.svg" alt="Logo">
+        <span>MiApp</span>
+        <span class="tag">Usuario</span>
+      </a>
+      <nav class="nav">
+        <a href="./usuario.html">Inicio</a>
+        <a href="#" onclick="goTo('./admin.html')">Backoffice</a>
+        <a href="#" onclick="alert('Acá iría cerrar sesión.')">Salir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div>
+        <h1>¡Hola, <span id="user-name">Usuario</span>!</h1>
+        <div class="muted" id="user-email">correo@example.com</div>
+      </div>
+      <button class="btn" onclick="alert('Esto simula crear un nuevo pedido')">Nuevo pedido</button>
+    </div>
+
+    <div class="grid">
+      <section class="card" style="grid-column: span 12;">
+        <div class="kpis">
+          <div class="kpi">
+            <div class="muted">Saldo</div>
+            <div class="big" id="kpi-saldo">—</div>
+          </div>
+          <div class="kpi">
+            <div class="muted">Pedidos</div>
+            <div class="big" id="kpi-pedidos">—</div>
+          </div>
+          <div class="kpi">
+            <div class="muted">Pendientes</div>
+            <div class="big" id="kpi-pendientes">—</div>
+          </div>
+          <div class="kpi">
+            <div class="muted">Mensajes</div>
+            <div class="big" id="kpi-mensajes">—</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" style="grid-column: span 7;">
+        <h3>Actividad reciente</h3>
+        <div class="spacer"></div>
+        <table class="table">
+          <thead>
+            <tr><th>ID</th><th>Tipo</th><th>Detalle</th><th>Fecha</th></tr>
+          </thead>
+          <tbody id="tbody-actividad"></tbody>
+        </table>
+      </section>
+
+      <section class="card" style="grid-column: span 5;">
+        <h3>Pedidos recientes</h3>
+        <div class="spacer"></div>
+        <table class="table">
+          <thead>
+            <tr><th>#</th><th>Estado</th><th>Fecha</th><th>Total</th></tr>
+          </thead>
+          <tbody id="tbody-pedidos"></tbody>
+        </table>
+      </section>
+
+      <section class="card" style="grid-column: span 12;">
+        <h3>Actualizar datos</h3>
+        <div class="spacer"></div>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input class="input" type="text" placeholder="Tu nombre (demo)">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label>Correo</label>
+              <input class="input" type="email" placeholder="tu@email.com (demo)">
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn" onclick="alert('Esto enviaría los datos al backend')">Guardar</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Panel de Usuario — interfaz lista para conectar a API.
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
